@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        li {
+            padding-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Anotações relevantes durante o projeto</h1>
+
+    <p><strong>SOBRE TROCAR A SECTION DE LADO NO LUGAR DE TEXT ALIGN:</strong> Vi nos comentários do vídeo pelo youtube: E para trocar o lado no lugar de text-align: right também pode usar o float: right;</p>
+
+    <p><strong>***IMPORTANTE - CRIANDO UM BOTÃO HOVER LEGAL (SACADA GENIAL):</strong> No projeto, foram utilizadas em um <strong>botão hover</strong> as seguintes propriedades:</p>
+    <ul>
+        <li><strong>*BORDER:</strong> A sacada é que o border foi utilizado <strong>NO HOVER (com uma cor BRANCA ainda)</strong> criando assim aquela sensação de "selecionado" ao passar o mouse em cima. <br> <br>
+        <strong><ins>*MUITO IMPORTANTE SE ATENTAR: Quando isso for feito, o botão parece que irá "se mexer" pois a borda NÃO ESTÁ FAZENDO PARTE DO OBJETO *(pelo que eu entendi, o porquê disso, é devido à borda normalmente ser POR FORA da caixa e esteja fazendo com que empurre os outros objetos, o que não aconteceria se a borda fosse POR DENTRO da caixa)*. Para resolvermos isso, a tag a seguir é necessária</ins></strong>
+        </li>
+        <li><strong>*NOVA PROPRIEDADE - BOX-SIZING: BORDER-BOX;</strong> Faz com que a borda <strong>seja parte da caixa</strong>, resolvendo o "problema" acima de efeito "pop-up" que é causado quando atribuimos uma borda ao botão</li>
+        <li><strong>*TRANSFORM: TRANSLATE(-3px, -3px) (OUTRA SACADA MUITO LEGAL):</strong> Da mesma forma que usamos para posicionar caixas anteriormente, também dá para criar um efeito usando o transform translate. Combinado ao hover, o transform irá dar aquele efeito legal de <strong>SE MEXER</strong> quando colocarmos o mouse em cima. <br> <br>
+        <strong><ins>*NOTA IMPORTANTE: Para relembrar, essa propriedade simplesmente irá mexer/reposicionar a caixa e, como a referência padrão é sempre o ponto superior esquerdo, os dois valores (se positivos) que colocarmos irão fazer com que a caixa se mova para baixo e para direita, e como os botões na página estão à DIREITA da página, os botões precisam fazer um movimento PARA A ESQUERDA E PARA CIMA e, já que os valores positivos fazem com que o objeto se mexa para baixo e direita, valores negativos fazem justamente o oposto; para cima e para esquerda, obtendo assim o efeito desejado para a página.</ins></strong>
+        </li>
+        <li><strong>BOX-SHADOW:</strong> Após isso tudo, o botão criará um efeito de "levantado" e, a sacada do box shadow combinado a isso tudo no hover, é que ele <strong>fará uma sombra atrás do botão quando ele for "levantado"</strong> <br> <br>
+        <strong>NOTA: O botão em si já tinha um box shadow <ins>sem o hover</ins>, para dar um leve efeito de sombra. Então, para simular uma sombra mais real, o box shadow <ins>NO HOVER</ins> precisaria ser mais forte para dar um efeito maior de sombra quando levantado.</strong>
+        </li>
+        <li><strong>*NOVA PROPRIEDADE - TRANSITION: TRANSFORM 0.2s;</strong> Essa propriedade em conjunto com "transform" criará um efeito de <strong>DELAY</strong> para que o hover aconteça. Sim, o famoso efeito de delay no hover! E podendo ser configurado o tempo de delay. <br> <br>
+        <strong>NOTA: O "transform" aparecerá branco mesmo. Testei com e sem o transform, ambas funcionaram mas de um jeito um pouco diferente!!</strong> <br>
+        <strong>NOTA 2: O transition é um <ins>SHORTHAND.</ins> Pode-se também configurar separadamente o delay de, por exemplo, o border, que ficaria do seguinte jeito: "transition: transform 0.2s, border 0.7s;"</strong>
+        </li>
+
+    </ul>
+</body>
+</html>
