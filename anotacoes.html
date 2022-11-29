@@ -39,6 +39,12 @@
         <strong>NOTA 2: O transition é um <ins>SHORTHAND.</ins> Pode-se também configurar separadamente o delay de, por exemplo, o border, que ficaria do seguinte jeito: "transition: transform 0.2s, border 0.7s;"</strong>
         </li>
 
+        <p><strong>**NOVA PROPRIEDADE BEM LEGAL: "<ins>::webkit-scrollbar {width: 0px; height: 0px;}</ins>"</strong> É um comando muito legal que deve ser colocado sozinho <strong>no CSS, que irá ESCONDER a barra de rolagem</strong> (não foi explicado, mas, acredito eu que os valores de width e height sejam justamente os valores do tamanho da barra de rolagem, sendo 0 para que realmente não apareça), fazendo assim com que a diferença nas configurações de tamanho de width possam ser amenizadas quando houver alguma rolagem lateral pois, mesmo que haja a barra de rolagem, ela não será mostrada. <strong>Fora isso, é um efeito bem legal de poder scrollar também verticalmente sem ter a presença de uma barra de rolagem</strong></p>
+        <p><strong>NOTA: Isso surgiu na montagem da página do youtube do projeto, onde foi usado um width de 100vw. Eu testei com 100% ao invés de 100vw e não obvite rolagem horizontal. Mas, ainda seria bom usar o webkit, pois a rolagem vertical ainda existirá e será interessante esconde-la.</strong></p>
+        <p><strong>NOTA 2: Vi em um comentário no youtube que também dá pra usar display: none; ao invés de width e height 0px!</strong></p>
+
+        <p><strong>**DICA: NOVA PÁGINA DE CSS:</strong> Uma dica muito legal usada pelo professor é, já que os links todos terão os mesmos estilos de CSS, fez-se <strong>UM NOVO ARQUIVO CSS VOLTADO APENAS PARA OS LINKS</strong>.</p>
+
     </ul>
 </body>
 </html>
